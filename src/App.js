@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Header from "./components/header.component/header";
+import Collection from "./components/collection/collection";
+import Filter from "./components/filter.component/filter";
 
-function App() {
+import { Component, createContext, useState, useEffect } from "react";
+const Serials = createContext("without provider");
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Filter />
+      <Collection />
     </div>
   );
-}
+};
 
 export default App;

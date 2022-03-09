@@ -1,0 +1,28 @@
+.header {
+  height: 15vh;
+  display: flex;
+  background-color: skyblue;
+  align-items: center;
+
+  .logo-container {
+    height: 10vh;
+    width: 10vh;
+    background-color: black;
+    cursor: pointer;
+    padding: 30px 0 10px 30px;
+    margin: 20px 0px 0px 20px;
+  }
+  .nav-container {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px 30px;
+
+    height: 7vh;
+    display: flex;
+
+    .nav-item {
+      margin: 15px 0px 0px 15px;
+      cursor: pointer;
+    }
+  }
+}

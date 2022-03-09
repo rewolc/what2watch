@@ -1,7 +1,6 @@
 import "./tytles.types";
 import TytlesAction from "./tytles.types";
 
-
 const INITIAL_STATE = {
   tytles: [],
 };

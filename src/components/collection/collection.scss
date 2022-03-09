@@ -1,13 +1,9 @@
-.collection-container{
-   width: 80%;
-   height: 100vh;
-   background-color: purple;
-   display: flex;
-  
-   margin: 30px auto;
-   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr ;
-   grid-auto-rows: 200px;
-
-
+.collection-container {
+  width: 90%;
+  height: 100%;
+  background-color: rgb(19, 4, 4);
+  margin: 30px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: 460px;
 }

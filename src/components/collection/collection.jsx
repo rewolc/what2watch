@@ -1,17 +1,19 @@
 import "./collection.scss";
 import CollectionItem from "../collection-item/collection-item";
-import AddItem from "../add-collection-item/add-collection-item";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectTitle } from "../../redux/tytles/tytles.selectors";
 
 
-const Collection = () => (
+const Collection = ({serial}) => (
+  <div className="collection-container">
+    {serial.map(({filmId, ...otherProp}) => (<CollectionItem key = {filmId} {...otherProp} /> ))
+      }
+  </div>
+);
 
-   <div className="collection-container">
-       <AddItem />
-       <CollectionItem/>
-      
+const mapStateToProps = (state) =>({
+serial : state.tytle.tytles
+})
 
-   </div>
-
-
-)
-export default Collection;
+export default connect(mapStateToProps)(Collection);

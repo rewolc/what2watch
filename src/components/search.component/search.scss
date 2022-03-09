@@ -1,6 +1,8 @@
 .search {
   height: 7vh;
-  background-color: rgb(19, 4, 4);
+  background-color: #000424;
+  border: 1px solid rgb(180, 96, 23);
+  border-radius: 30px;
   margin-top: 5px;
   display: flex;
   align-items: center;
@@ -12,14 +14,14 @@
     font-size: 18px;
     border: none;
     transition: width 0.4s ease-in-out;
-
+    
     border-radius: 15px;
     line-height: 4px;
     text-align: center;
 
     &:focus {
       outline: none;
-      border: 2px solid green;
+      border: 2px solid rgb(145, 77, 14);
       caret-color: transparent;
       width: 300px;
       text-decoration: none;
@@ -34,9 +36,9 @@
     cursor: pointer;
 
     font-size: 15px;
-    border: 2px solid green;
+    border: 1px solid #000440;
     &:hover {
-      border: 2px solid rgb(1, 58, 1);
+      border: 2px solid rgb(180, 96, 23);
     }
   }
 }

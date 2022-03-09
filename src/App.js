@@ -9,7 +9,7 @@ const Serials = createContext("without provider");
 
 const App = () => {
   return (
-    <div>
+    <div className="body">
       <Header />
       <Search />
       <Collection />

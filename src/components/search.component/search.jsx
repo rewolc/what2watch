@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { connect, useDispatch, useSelector } from "react-redux";
-import { addTitle } from "../../redux/tytles/tytles.action";
+
 import "./search.scss";
 
-const Search = ({ add }) => {
+const Search = () => {
   const dispatch = useDispatch();
   const store = useSelector((store) => store);
   const [name, newletter] = useState("");
@@ -31,7 +31,5 @@ const Search = ({ add }) => {
   );
 };
 
-const mapDispatchToProps = (dispatch) => ({
-  add: (item) => dispatch(addTitle(item)),
-});
-export default connect(null, mapDispatchToProps)(Search);
+
+export default Search;

@@ -3,6 +3,7 @@ import { takeEvery, put, call } from "redux-saga/effects";
 async function getSerial(i) {
   const title = encodeURI(i);
   const request = await fetch(
+    
     `https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword?keyword=${title}&page=1`,
     {
       method: "GET",
@@ -13,6 +14,7 @@ async function getSerial(i) {
     }
   );
   const data = await request.json();
+
   return data.films[0];
 }
 

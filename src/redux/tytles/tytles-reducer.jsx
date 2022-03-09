@@ -1,6 +1,6 @@
 import "./tytles.types";
 import TytlesAction from "./tytles.types";
-
+import { removeFilm } from "./tytles.action";
 const INITIAL_STATE = {
   tytles: [],
 };
@@ -12,6 +12,11 @@ const tytleReducer = (state = INITIAL_STATE, action) => {
         ...state,
         tytles: [...state.tytles, action.payload],
       };
+      case TytlesAction.REMOVE_FILM :
+        return{
+          ...state,
+          tytles: removeFilm(state,action.payload)
+        }
     default:
       return state;
   }

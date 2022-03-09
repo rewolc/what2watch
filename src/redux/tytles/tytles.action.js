@@ -1,7 +1,6 @@
 import TytlesAction from "./tytles.types";
-export const addTitle = (i) => ({
+export const removeFilm = (i) => ({
+  type: TytlesAction.REMOVE_FILM,
+  payload: i,
+});
 
-   
-  type: TytlesAction.ADD_TITLE,
-  payload:  i
-})

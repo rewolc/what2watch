@@ -7,7 +7,7 @@ import { selectTitle } from "../../redux/tytles/tytles.selectors";
 
 const Collection = ({serial}) => (
   <div className="collection-container">
-    {serial.map(({filmId, ...otherProp}) => (<CollectionItem key = {filmId} {...otherProp} /> ))
+    {serial.map(({...otherProp}) => (<CollectionItem {...otherProp} /> ))
       }
   </div>
 );

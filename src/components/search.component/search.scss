@@ -1,9 +1,11 @@
 .search {
+  position: relative;
+  width: 90%;
   height: 7vh;
   background-color: #000424;
   border: 1px solid rgb(180, 96, 23);
   border-radius: 30px;
-  margin-top: 5px;
+  margin: 5px auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,8 +28,13 @@
       width: 300px;
       text-decoration: none;
       font-size: 18px;
+
     }
+   
   }
+
+
+  
   .search-button {
     width: 100px;
     height: 40px;

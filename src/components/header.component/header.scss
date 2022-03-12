@@ -3,8 +3,8 @@
   display: flex;
   background-color: #000424;
   align-items: center;
-  border: 1px solid rgb(180, 96, 23);
-  border-radius: 30px;
+  border-bottom: 1px solid rgb(180, 96, 23);
+  border-radius: 0 0 20px 20px;
 
   .logo-container {
     height: 10vh;
@@ -18,7 +18,7 @@
     font-size: 20px;
     font-weight: 500;
     padding: 0 10px 30px;
-    color :rgb(180, 96, 23);
+    color: rgb(180, 96, 23);
     height: 7vh;
     display: flex;
 

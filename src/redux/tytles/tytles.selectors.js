@@ -7,3 +7,4 @@ export const selectTitle = createSelector(
    [selectReducer],
    (tytle) =>tytle.tytles 
 )
+

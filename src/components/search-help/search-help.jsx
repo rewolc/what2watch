@@ -1,17 +1,17 @@
-import './search-help.scss'
+import "./search-help.scss";
+import { connect, useDispatch, useSelector } from "react-redux";
+import { addFilm } from "../../redux/tytles/tytles.action";
 
-
-const SearchHelp = ({names}) => {
-
-
-
-   return(
-      
-      <div className="search-help">{names.nameRu}</div>
-     
-    
-      
-   )
-
-}
-export default SearchHelp;
+const SearchHelp = ({ names, add }) => {
+  return (
+   names.nameRu ?
+    <div className="search-help" onClick={() => add(names)}>
+      {names.nameRu}
+    </div>
+    : null
+  );
+};
+const mapDispatchToProps = (dispatch) => ({
+  add: (i) => dispatch(addFilm(i)),
+});
+export default connect(null, mapDispatchToProps)(SearchHelp);

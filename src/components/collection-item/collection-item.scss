@@ -34,7 +34,7 @@
       }
       .btn {
         opacity: 0.9;
-        transition: opacity 0.8s;
+        transition: all 0.8s;
         cursor: pointer;
       }
     }
@@ -47,10 +47,14 @@
     height: 50px;
     border-radius: 20px;
     font-size: 20px;
-    background-color: rgb(180, 96, 23);
+    background-color: rgb(158, 85, 21);
     color: rgba(255, 255, 255, 0.74);
-    border: 2px solid #7e4313;
+    border: 2px solid rgb(255, 119, 0); 
     opacity: 0;
+    &:hover{
+      background-color: rgb(255, 119, 0); 
+      opacity:1;
+    }
   }
 }
 

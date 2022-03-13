@@ -30,7 +30,9 @@ async function getSerial(i) {
 
 export function* workFetchSaga(args) {
   const mySerial = yield call(getSerial, args.name);
-  yield put({ type: "SET_SERIAL", payload: { ...mySerial[0], isFav: "no" } });
+  console.log(mySerial.length)
+   
+  mySerial.length !== 0 ? yield put({ type: "SET_SERIAL", payload: { ...mySerial[0], isFav: "no" } }) : alert('Название введено неправильно');
 }
 
 export function* watchFetchSaga() {

@@ -6,6 +6,7 @@ import {
   put,
   call,
 } from "redux-saga/effects";
+import {openBadNotif,openGoodNotif} from '../../components/notif.component/notif' 
 
 async function getSerial(i) {
   const title = encodeURI(i);
@@ -31,8 +32,14 @@ async function getSerial(i) {
 export function* workFetchSaga(args) {
   const mySerial = yield call(getSerial, args.name);
   console.log(mySerial.length)
+  if(mySerial.length !== 0){
+    openGoodNotif('success')
+    yield put({ type: "SET_SERIAL", payload: { ...mySerial[0], isFav: "no" } });
    
-  mySerial.length !== 0 ? yield put({ type: "SET_SERIAL", payload: { ...mySerial[0], isFav: "no" } }) : alert('Название введено неправильно');
+  } else{
+   openBadNotif('error')
+  }
+  // mySerial.length !== 0 ? yield put({ type: "SET_SERIAL", payload: { ...mySerial[0], isFav: "no" } }) : openNotification('error');
 }
 
 export function* watchFetchSaga() {

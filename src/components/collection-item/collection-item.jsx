@@ -1,6 +1,7 @@
 import "./collection-item.scss";
 import { connect } from "react-redux";
-import { createSelectorCreator } from "reselect";
+import { useNavigate } from "react-router-dom";
+
 import {
   removeFilm,
   addToFav,
@@ -16,40 +17,46 @@ const CollectionItem = ({
   isFav,
   addFav,
   dellFromFav,
-}) => (
-  <div className="collection-item-container " key={filmId}>
-    <div className="collection-item">
-      <div className="image">
-        <img src={posterUrl} alt="Постер" />
-        <button className="btn">Смотреть</button>
+}) => {
+  let navigate = useNavigate();
+
+  return (
+    <div className="collection-item-container " key={filmId}>
+      <div className="collection-item">
+        <div className="image">
+          <img src={posterUrl} alt="Постер" />
+          <button className="btn" onClick={() => navigate(`/${filmId}`)}>
+            Смотреть
+          </button>
+        </div>
+      </div>
+      <div className="name">{nameRu}</div>
+      <a
+        className="raiting icon"
+        href={
+          type === "FILM"
+            ? `https://www.kinopoisk.ru/film/${filmId}/`
+            : `https://www.kinopoisk.ru/series/${filmId}/`
+        }
+        target="_blank"
+      >
+        {rating == "null" ? 0 : rating}
+      </a>{" "}
+      {isFav === "yes" ? (
+        <div className="favorite icon" onClick={() => dellFromFav(filmId)}>
+          &#9733;{" "}
+        </div>
+      ) : (
+        <div className="favorite icon" onClick={() => addFav(filmId)}>
+          &#9734;{" "}
+        </div>
+      )}
+      <div className="remove icon" onClick={() => removeFilm(filmId)}>
+        &#128465;
       </div>
     </div>
-    <div className="name">{nameRu}</div>
-    <a
-      className="raiting icon"
-      href={
-        type === "FILM"
-          ? `https://www.kinopoisk.ru/film/${filmId}/`
-          : `https://www.kinopoisk.ru/series/${filmId}/`
-      }
-      target="_blank"
-    >
-      {rating == "null" ? 0 : rating}
-    </a>{" "}
-    {isFav === "yes" ? (
-      <div className="favorite icon" onClick={() => dellFromFav(filmId)}>
-        &#9733;{" "}
-      </div>
-    ) : (
-      <div className="favorite icon" onClick={() => addFav(filmId)}>
-        &#9734;{" "}
-      </div>
-    )}
-    <div className="remove icon" onClick={() => removeFilm(filmId)}>
-      &#128465;
-    </div>
-  </div>
-);
+  );
+};
 const mapDispatchToProps = (dispatch) => ({
   removeFilm: (i) => dispatch(removeFilm(i)),
   addFav: (i) => dispatch(addToFav(i)),
@@ -57,4 +64,3 @@ const mapDispatchToProps = (dispatch) => ({
 });
 
 export default connect(null, mapDispatchToProps)(CollectionItem);
-

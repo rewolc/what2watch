@@ -1,16 +1,14 @@
-import {  notification } from 'antd';
+import { notification } from "antd";
 
-export const openBadNotif= type => {
+export const openBadNotif = (type) => {
   notification[type]({
-    message: 'Что-то пошло не так :(',
-    description:
-      'Возможно,вы неправильно ввели название',
+    message: "Что-то пошло не так :(",
+    description: "Возможно,вы неправильно ввели название",
   });
 };
-export const openGoodNotif = type => {
+export const openGoodNotif = (type) => {
   notification[type]({
-    message: 'Все получилось!',
-    description:
-      'Успешно добавлено в библиотеку',
+    message: "Все получилось!",
+    description: "Успешно добавлено в библиотеку",
   });
 };

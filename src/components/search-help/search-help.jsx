@@ -3,18 +3,15 @@ import { connect, useDispatch, useSelector } from "react-redux";
 import { addFilm } from "../../redux/tytles/tytles.action";
 import { openGoodNotif } from "../notif.component/notif";
 const SearchHelp = ({ names, add }) => {
-  
-  const searchClick =(i) => {
+  const searchClick = (i) => {
     add(i);
-    setTimeout(() => openGoodNotif('success'), 500)
-  }
-  return (
-   names.nameRu ?
+    setTimeout(() => openGoodNotif("success"), 500);
+  };
+  return names.nameRu ? (
     <div className="search-help" onClick={() => searchClick(names)}>
       {names.nameRu}
     </div>
-    : null
-  );
+  ) : null;
 };
 const mapDispatchToProps = (dispatch) => ({
   add: (i) => dispatch(addFilm(i)),

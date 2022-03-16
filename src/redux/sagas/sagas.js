@@ -19,7 +19,7 @@ async function getSerial(i) {
       {
         method: "GET",
         headers: {
-          "X-API-KEY": "bb658897-c505-4b44-9438-efcd0211c1e4",
+          "X-API-KEY": "df8654c1-4263-419a-9594-3b89f5ee55c8",
           accept: "application/json",
         },
       }
@@ -37,11 +37,13 @@ export function* workFetchSaga(args) {
   console.log(mySerial.length);
   if (mySerial.length !== 0) {
     openGoodNotif("success");
-    yield put({ type: "SET_SERIAL", payload: { ...mySerial[0], isFav: "no" } });
+    yield put({
+      type: "SET_SERIAL",
+      payload: { ...mySerial[0], isFav: "no", display: "true" },
+    });
   } else {
     openBadNotif("error");
   }
-  // mySerial.length !== 0 ? yield put({ type: "SET_SERIAL", payload: { ...mySerial[0], isFav: "no" } }) : openNotification('error');
 }
 
 export function* watchFetchSaga() {

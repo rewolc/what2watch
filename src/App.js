@@ -24,3 +24,24 @@ const App = () => {
 };
 
 export default App;
+
+const arr = [1,1,2,2,2,3]
+const newArr = arr;
+
+for(let n=0;n<=arr.length;n++){
+  let lArr=[]
+  for(let i=0;i<=arr.length;i++){
+    if(arr[n] !== newArr[i+1]){
+      lArr.push(arr[n])
+}
+    console.log(lArr)
+  }
+}
+
+const foo = (ar) => {
+  
+    
+
+
+}
+foo(arr)

@@ -1,12 +1,12 @@
 import { useState, useRef, useEffect } from "react";
 import { connect, useDispatch, useSelector } from "react-redux";
 import SearchHelp from "../search-help/search-help";
-
+import { Checkbox } from "antd";
 import "./search.scss";
 
 const Search = ({ names }) => {
   const dispatch = useDispatch();
-  
+
   const [name, newletter] = useState("");
 
   const handleChange = (event) => {
@@ -19,11 +19,14 @@ const Search = ({ names }) => {
     setTimeout(() => newletter(""), 500);
   };
   const handleClick = () => {
-    newletter("")
+    newletter("");
   };
 
   return (
     <div className="search">
+      <Checkbox onChange={null} className="check">
+        Избранное?
+      </Checkbox>
       <form onSubmit={handleSubmit} className="form">
         <input
           id="inpt"
@@ -36,7 +39,7 @@ const Search = ({ names }) => {
         <input className="search-button" type="submit" value="Добавить" />
 
         <div className={"search-help-cont"} onClick={handleClick}>
-          {names !== undefined & name !== ''
+          {(names !== undefined) & (name !== "")
             ? names.map((i) => <SearchHelp key={i.filmId} names={i} />)
             : null}
         </div>
@@ -47,5 +50,8 @@ const Search = ({ names }) => {
 const mapStateToProps = (state) => ({
   names: state.tytle.names[0],
 });
+// const mapDispatchToProps = dispatch => ({
+
+// })
 
 export default connect(mapStateToProps)(Search);

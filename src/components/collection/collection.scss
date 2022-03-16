@@ -4,9 +4,13 @@
   background-color: #000426;
   border: 1px solid rgb(180, 96, 23);
   margin: 30px auto;
+
+  border-radius: 20px;
+
+}
+
+.main-page{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-auto-rows: 460px;
-  border-radius: 20px;
-
 }

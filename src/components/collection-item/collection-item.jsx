@@ -8,6 +8,7 @@ import {
   dellFromFav,
 } from "../../redux/tytles/tytles.action";
 const CollectionItem = ({
+  display,
   type,
   filmId,
   nameRu,
@@ -18,8 +19,9 @@ const CollectionItem = ({
   addFav,
   dellFromFav,
 }) => {
+  console.log(display)
   let navigate = useNavigate();
-
+  if(display){
   return (
     <div className="collection-item-container " key={filmId}>
       <div className="collection-item">
@@ -55,7 +57,7 @@ const CollectionItem = ({
         &#128465;
       </div>
     </div>
-  );
+  );} 
 };
 const mapDispatchToProps = (dispatch) => ({
   removeFilm: (i) => dispatch(removeFilm(i)),

@@ -1,0 +1,32 @@
+.descr-cont {
+  font-size: 20px;
+  border-bottom: 1px solid rgb(180, 96, 23);
+
+  .name {
+    border-width: 30px;
+    font-size: 37px;
+    border-bottom: 1px solid rgb(180, 96, 23);
+  }
+  .descrt {
+    color: rgba(255, 255, 255, 0.74);
+    padding: 30px 15px 0 15px;
+    display: flex;
+    flex-direction: column;
+    .genres {
+      margin-top: 10px;
+    }
+    .rate {
+      margin-top: 10px;
+    }
+    .text {
+      margin-top: 20px;
+    }
+
+    p {
+      display: inline;
+    }
+    span {
+      color: rgb(180, 96, 23);
+    }
+  }
+}

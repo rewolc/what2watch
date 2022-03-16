@@ -8,7 +8,7 @@ import tytleReducer from "./tytles/tytles-reducer";
 const persistConfig = {
   key: "root",
   storage,
-  blacklist : ['tytle']
+  whitelist : ['tytle']
 };
 
 const rootReducer = combineReducers({

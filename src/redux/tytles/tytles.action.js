@@ -13,5 +13,5 @@ export const dellFromFav = (i) => ({
 });
 export const addFilm = (i) => ({
   type: TytlesAction.ADD_FILM,
-  payload: { ...i, isFav: "no" },
+  payload: { ...i, isFav: "no", display : 'true' },
 });

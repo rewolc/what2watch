@@ -31,7 +31,7 @@ const Search = ({ names, checkFav }) => {
       <Checkbox onChange={() => checkFav()} className="check">
         Избранное?
       </Checkbox>
- 
+
       <form onSubmit={handleSubmit} className="form">
         <input
           id="inpt"

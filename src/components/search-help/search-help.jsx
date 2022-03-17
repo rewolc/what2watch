@@ -4,7 +4,6 @@ import { connect, useDispatch, useSelector } from "react-redux";
 
 import { addFilm } from "../../redux/tytles/tytles.action";
 import { openGoodNotif } from "../notif.component/notif";
-import { Checkbox } from "antd";
 
 const SearchHelp = ({ names, add }) => {
   const searchClick = (i) => {

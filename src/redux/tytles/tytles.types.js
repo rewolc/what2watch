@@ -7,5 +7,3 @@ const TytlesAction = {
 };
 
 export default TytlesAction;
-
-

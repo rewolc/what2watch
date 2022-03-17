@@ -9,9 +9,7 @@
   border-radius: 0 0 15px 15px;
   padding-top: 0px;
   display: none;
-  
 }
-
 
 .search-help {
   cursor: pointer;
@@ -21,15 +19,15 @@
   border-bottom: 2px solid rgb(180, 96, 23);
   border-radius: 6px;
   font-size: 13px;
-  
+
   &:last-child {
     border-bottom: none;
   }
-  &:hover{
-    color: rgb(170, 91, 17);;
+  &:hover {
+    color: rgb(170, 91, 17);
   }
 }
 
-.search:hover .search-help-cont{
+.search:hover .search-help-cont {
   display: block;
 }

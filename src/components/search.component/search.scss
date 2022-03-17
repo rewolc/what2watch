@@ -15,7 +15,6 @@
     left: 3%;
   }
   .search-form {
-
     height: 40px;
     margin: 5px;
 
@@ -35,17 +34,15 @@
       text-decoration: none;
     }
   }
-.form {
-  border-left: 1px solid rgb(180, 96, 23);
-  border-right: 1px solid rgb(180, 96, 23);
-}
+  .form {
+    border-left: 1px solid rgb(180, 96, 23);
+    border-right: 1px solid rgb(180, 96, 23);
+  }
   .search-button {
-
     border-radius: 15px;
     border: none;
     cursor: pointer;
 
-    
     border: 1px solid #000440;
     &:hover {
       border: 2px solid rgb(180, 96, 23);

@@ -18,7 +18,7 @@ export const Description = ({ film }) => {
           ))}
         </div>
         <div className="rate">
-          <span>Рейтинг на Кионпоиске : </span> {rating}
+          <span>Рейтинг на Кионпоиске : </span> {rating == "null"  ? 0 : rating}
         </div>
 
         <div className="text">

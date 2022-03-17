@@ -2,8 +2,7 @@ import "./description.scss";
 
 export const Description = ({ film }) => {
   const { genres, nameRu, rating, year, description } = film;
-  console.log(genres);
-  console.log(film);
+
   return (
     <div className="descr-cont">
       <div className="name">{nameRu}</div>

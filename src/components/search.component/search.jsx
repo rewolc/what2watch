@@ -1,10 +1,14 @@
-import { useState, useRef, useEffect } from "react";
-import { connect, useDispatch, useSelector } from "react-redux";
-import SearchHelp from "../search-help/search-help";
-import { Checkbox } from "antd";
 import "./search.scss";
 
-const Search = ({ names }) => {
+import { useState } from "react";
+import { connect, useDispatch, useSelector } from "react-redux";
+
+import SearchHelp from "../search-help/search-help";
+
+import { Checkbox } from "antd";
+import { checkFav } from "../../redux/tytles/tytles.action";
+
+const Search = ({ names, checkFav }) => {
   const dispatch = useDispatch();
 
   const [name, newletter] = useState("");
@@ -24,9 +28,10 @@ const Search = ({ names }) => {
 
   return (
     <div className="search">
-      <Checkbox onChange={null} className="check">
+      <Checkbox onChange={() => checkFav()} className="check">
         Избранное?
       </Checkbox>
+ 
       <form onSubmit={handleSubmit} className="form">
         <input
           id="inpt"
@@ -47,11 +52,13 @@ const Search = ({ names }) => {
     </div>
   );
 };
+
 const mapStateToProps = (state) => ({
   names: state.tytle.names[0],
 });
-// const mapDispatchToProps = dispatch => ({
 
-// })
+const mapDispatchToProps = (dispatch) => ({
+  checkFav: (i) => dispatch(checkFav(i)),
+});
 
-export default connect(mapStateToProps)(Search);
+export default connect(mapStateToProps, mapDispatchToProps)(Search);

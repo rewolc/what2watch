@@ -37,13 +37,6 @@ const FilmPage = (films) => {
           data-title={`${filmById[0].nameRu}`}
           className="video"
         ></div>
-        <div className="torrents">
-          <div
-            id="yohoho"
-            data-player="torrent"
-            data-title={filmById[0].nameRu}
-          ></div>
-        </div>
       </div>
     </div>
   );

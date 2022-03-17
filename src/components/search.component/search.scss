@@ -1,7 +1,7 @@
 .search {
   position: relative;
   width: 90%;
-  height: 7vh;
+  height: 50px;
   background-color: #000424;
   border: 1px solid rgb(180, 96, 23);
   border-radius: 30px;
@@ -9,14 +9,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  .check{
-    color : rgb(255, 255, 255);
+  .check {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 3%;
   }
   .search-form {
-    width: 250px;
+
     height: 40px;
     margin: 5px;
-    font-size: 18px;
+
     border: none;
     transition: all 0.5s ease-in-out;
     border-radius: 15px;
@@ -26,24 +28,24 @@
     &:focus {
       border-radius: 15px 15px 0 0;
       position: relative;
-      height: 50px;
       outline: none;
       border: 2px solid rgb(145, 77, 14);
       caret-color: transparent;
-      width: 300px;
+
       text-decoration: none;
-      font-size: 18px;
     }
   }
-
+.form {
+  border-left: 1px solid rgb(180, 96, 23);
+  border-right: 1px solid rgb(180, 96, 23);
+}
   .search-button {
-    width: 100px;
-    height: 40px;
+
     border-radius: 15px;
     border: none;
     cursor: pointer;
 
-    font-size: 15px;
+    
     border: 1px solid #000440;
     &:hover {
       border: 2px solid rgb(180, 96, 23);

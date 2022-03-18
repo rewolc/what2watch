@@ -1,11 +1,11 @@
 .collection-item-container {
   position: relative;
-  border: 1px solid #000430;
+  border: 1px solid rgb(53, 53, 53);
   border-radius: 20px;
   transition: border 1s;
   z-index: 0;
   &:hover {
-    border: 1px solid rgb(180, 96, 23);
+    border: 1px solid rgb(92, 92, 92);
   }
 }
 .collection-item {
@@ -42,12 +42,12 @@
     width: 60%;
     height: 10%;
     border-radius: 20px;
-    background-color: rgb(158, 85, 21);
-    color: rgba(255, 255, 255, 0.74);
-    border: 2px solid rgb(255, 119, 0);
+    background-color: #0e143d;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(53, 53, 53);
     opacity: 0;
     &:hover {
-      background-color: rgb(255, 119, 0);
+      background-color: rgb(182, 149, 95);
       opacity: 1;
     }
   }
@@ -61,15 +61,15 @@
   position: absolute;
   cursor: pointer;
   right: 5px;
-  color: rgb(180, 96, 23);
+  color: #8db3b3;
   font-weight: bold;
-  background-color: #000426;
+  background-color: #0e143d;
   border-radius: 10px;
   width: 50px;
   height: 50px;
   text-align: center;
   &:hover {
-    color: rgb(255, 139, 37);
+    color: rgb(255, 255, 255);
   }
 }
 

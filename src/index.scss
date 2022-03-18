@@ -1,5 +1,5 @@
 .body {
-  background-color: #000410;
+  background-color: #0b0c18;
 }
 
 @media screen and (min-width: 1200px) {
@@ -229,13 +229,13 @@
 }
 @media (min-width: 400px) and (max-width: 480px) {
   .main-page {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 405px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 420px;
   }
 
   .collection-item {
     .image {
-      height: 340px;
+      height: 380px;
     }
   }
   //////////HEADER

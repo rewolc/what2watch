@@ -1,9 +1,9 @@
 .descr-cont {
-  border-bottom: 1px solid rgb(180, 96, 23);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.74);
 
   .name {
     border-width: 30px;
-    border-bottom: 1px solid rgb(180, 96, 23);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.74);
   }
   .descrt {
     color: rgba(255, 255, 255, 0.74);
@@ -24,7 +24,7 @@
       display: inline;
     }
     span {
-      color: rgb(180, 96, 23);
+      color: rgb(231 189 121);
     }
   }
 }

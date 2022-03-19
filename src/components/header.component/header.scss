@@ -1,16 +1,14 @@
 .header {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   height: 5%;
   display: flex;
-  background-color: #0e143d;
+  background-color: black;
   align-items: center;
   border-bottom: 1px solid rgb(53, 53, 53);
-  border-radius: 0 0 20px 20px;
-
   .logo-container {
     height: 100px;
     width: 100px;
-
     cursor: pointer;
   }
   .nav-container {

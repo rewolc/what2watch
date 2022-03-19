@@ -6,13 +6,10 @@ import { Description } from "../../components/description/description";
 const FilmPage = (films) => {
   const location = useLocation();
   const id = location.pathname.slice(1);
-  console.log(films.films);
-  console.log(location.pathname.slice(1));
   const filmById =
     films.films.length !== 0
       ? films.films.filter((i) => i.filmId == id)
       : "Ошибка";
-  console.log(filmById);
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://yohoho.cc/yo.js";

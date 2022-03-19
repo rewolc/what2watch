@@ -43,8 +43,9 @@ const CollectionItem = ({
               : `https://www.kinopoisk.ru/series/${filmId}/`
           }
           target="_blank"
+          rel="noreferrer"
         >
-          {rating == "null" ? 0 : rating}
+          {rating === "null" ? 0 : rating}
         </a>{" "}
         {isFav === "yes" ? (
           <div className="favorite icon" onClick={() => dellFromFav(filmId)}>

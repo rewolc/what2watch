@@ -1,1 +1,1 @@
-https://what2watch-gamma.vercel.app/ - Online home cinema
+https://what2watch-one.vercel.app/ - Online home cinema

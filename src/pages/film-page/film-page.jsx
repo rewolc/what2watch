@@ -31,7 +31,7 @@ const FilmPage = (films) => {
       <div className="video-cont">
         <div
           id="yohoho"
-          data-title={`${filmById[0].nameRu}`}
+          data-kinopoisk={`${filmById[0].filmId}`}
           className="video"
         ></div>
       </div>

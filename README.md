@@ -1,9 +1,9 @@
-https://what2watch-one.vercel.app/ - Online home cinema made with Kinopoisk API, to start write down a movie name and press the button
+
 # What2Whatch Application
 
 ###### This is an online cinema application woth _adaptive layout_ , where you can look for movies/serials, and whatch it there. 
- 
- ### Stack 
+It was maded with `Kinopois API` and `yohoho players`  
+### Stack 
 
 >Was created with : 
 
@@ -12,7 +12,7 @@ https://what2watch-one.vercel.app/ - Online home cinema made with Kinopoisk API,
 - `scss` to create styles
 
 ### Deploy
-> I've deployed it on _https://loggin.vercel.app/_ 
+> I've deployed it on _https://what2watch-one.vercel.app_ 
 > 
 > Try it for yourself!
 

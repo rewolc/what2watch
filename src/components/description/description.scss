@@ -1,30 +1,30 @@
 .descr-cont {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.74);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.74);
 
-  .name {
-    border-width: 30px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.74);
-  }
-  .descrt {
-    color: rgba(255, 255, 255, 0.74);
-    padding: 30px 15px 10px 15px;
-    display: flex;
-    flex-direction: column;
-    .genres {
-      margin-top: 10px;
-    }
-    .rate {
-      margin-top: 10px;
-    }
-    .text {
-      margin-top: 20px;
-    }
+	.name {
+		border-width: 30px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.74);
+	}
+	.descrt {
+		color: rgba(255, 255, 255, 0.74);
+		padding: 30px 15px 10px 15px;
+		display: flex;
+		flex-direction: column;
+		.genres {
+			margin-top: 10px;
+		}
+		.rate {
+			margin-top: 10px;
+		}
+		.text {
+			margin-top: 20px;
+		}
 
-    p {
-      display: inline;
-    }
-    span {
-      color: rgb(231 189 121);
-    }
-  }
+		p {
+			display: inline;
+		}
+		span {
+			color: rgb(231 189 121);
+		}
+	}
 }

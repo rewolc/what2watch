@@ -1,24 +1,24 @@
 .image-cont {
-  width: 100%;
-  height: 100%;
-  img {
-    border: 1px solid rgba(255, 255, 255, 0.74);
+	width: 100%;
+	height: 100%;
+	img {
+		border: 1px solid rgba(255, 255, 255, 0.74);
 
-    width: 100%;
-    height: 100%;
-  }
+		width: 100%;
+		height: 100%;
+	}
 }
 .video-cont {
-  margin: 3% 0 5% 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+	margin: 3% 0 5% 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
 
-  .video {
-    border: 1px solid rgba(255, 255, 255, 0.74);
-  }
+	.video {
+		border: 1px solid rgba(255, 255, 255, 0.74);
+	}
 }
 .descr-head {
-  display: grid;
-  grid-gap: 0%;
+	display: grid;
+	grid-gap: 0%;
 }

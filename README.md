@@ -7,7 +7,7 @@ It was maded with `Kinopois API` and `yohoho players`
 
 >Was created with : 
 
-- `React` + `Redux` 
+- `React` + `Redux` + 'Redux Saga` 
 - `React Router Dom` 
 - `scss` to create styles
 

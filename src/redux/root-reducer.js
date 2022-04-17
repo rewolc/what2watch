@@ -6,14 +6,14 @@ import serialReducer from "./serials/serial-reducer";
 import tytleReducer from "./tytles/tytles-reducer";
 
 const persistConfig = {
-  key: "root",
-  storage,
-  whitelist: ["tytle"],
+	key: "root",
+	storage,
+	whitelist: ["tytle"],
 };
 
 const rootReducer = combineReducers({
-  serial: serialReducer,
-  tytle: tytleReducer,
+	serial: serialReducer,
+	tytle: tytleReducer,
 });
 
 export default persistReducer(persistConfig, rootReducer);

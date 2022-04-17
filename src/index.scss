@@ -1,333 +1,333 @@
 .body {
-  background-color: rgb(0, 0, 0);
+	background-color: rgb(0, 0, 0);
 }
 *::-webkit-scrollbar,
 *::-webkit-scrollbar-thumb {
-  width: 26px;
-  border-radius: 13px;
-  color: rgba(255, 255, 255, 0.712);
-  background-clip: padding-box;
-  border: 10px solid transparent;
+	width: 26px;
+	border-radius: 13px;
+	color: rgba(255, 255, 255, 0.712);
+	background-clip: padding-box;
+	border: 10px solid transparent;
 }
-*::-webkit-scrollbar-thumb {        
-  box-shadow: inset 0 0 0 10px;
+*::-webkit-scrollbar-thumb {
+	box-shadow: inset 0 0 0 10px;
 }
 
 @media screen and (min-width: 1200px) {
-  .main-page {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 485px;
-  }
-  .btn {
-    font-size: 20px;
-  }
-  .collection-item {
-    .image {
-      height: 420px;
-    }
-  }
-  //////////HEADER
-  .search-form {
-    width: 300px;
-    font-size: 20px;
-  }
-  .search-help-cont {
-    width: 440px;
-  }
-  .search-button {
-    font-size: 17px;
-    width: 130px;
-    height: 40px;
-  }
-  //////////FILM PAGE
-  .descr-cont {
-    font-size: 23px;
+	.main-page {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-auto-rows: 485px;
+	}
+	.btn {
+		font-size: 20px;
+	}
+	.collection-item {
+		.image {
+			height: 420px;
+		}
+	}
+	//////////HEADER
+	.search-form {
+		width: 300px;
+		font-size: 20px;
+	}
+	.search-help-cont {
+		width: 440px;
+	}
+	.search-button {
+		font-size: 17px;
+		width: 130px;
+		height: 40px;
+	}
+	//////////FILM PAGE
+	.descr-cont {
+		font-size: 23px;
 
-    .name {
-      border-width: 30px;
-      font-size: 30px;
-      border-bottom: 1px solid rgb(180, 96, 23);
-    }
-  }
-  .descr-head {
-    grid-template-columns: 1fr 2fr;
-  }
-  .image-cont {
-    padding: 10px 0 0 20px;
-  }
+		.name {
+			border-width: 30px;
+			font-size: 30px;
+			border-bottom: 1px solid rgb(180, 96, 23);
+		}
+	}
+	.descr-head {
+		grid-template-columns: 1fr 2fr;
+	}
+	.image-cont {
+		padding: 10px 0 0 20px;
+	}
 
-  .video {
-    width: 1080px;
-    height: 600px;
-  }
+	.video {
+		width: 1080px;
+		height: 600px;
+	}
 }
 @media (min-width: 992px) and (max-width: 1200px) {
-  .main-page {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-auto-rows: 485px;
-  }
-  .btn {
-    font-size: 20px;
-  }
-  .collection-item {
-    .image {
-      height: 420px;
-    }
-  }
-  //////////HEADER
-  .search-form {
-    width: 250px;
-    font-size: 17px;
-  }
-  .search-button {
-    font-size: 15px;
-    width: 100px;
-    height: 40px;
-  }
-  //////////FILM PAGE
-  .descr-cont {
-    font-size: 20px;
+	.main-page {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-auto-rows: 485px;
+	}
+	.btn {
+		font-size: 20px;
+	}
+	.collection-item {
+		.image {
+			height: 420px;
+		}
+	}
+	//////////HEADER
+	.search-form {
+		width: 250px;
+		font-size: 17px;
+	}
+	.search-button {
+		font-size: 15px;
+		width: 100px;
+		height: 40px;
+	}
+	//////////FILM PAGE
+	.descr-cont {
+		font-size: 20px;
 
-    .name {
-      border-width: 30px;
-      font-size: 27px;
-      border-bottom: 1px solid rgb(180, 96, 23);
-    }
-  }
-  .descr-head {
-    grid-template-columns: 1fr 2fr;
-  }
-  .image-cont {
-    padding: 10px 0 0 20px;
-  }
+		.name {
+			border-width: 30px;
+			font-size: 27px;
+			border-bottom: 1px solid rgb(180, 96, 23);
+		}
+	}
+	.descr-head {
+		grid-template-columns: 1fr 2fr;
+	}
+	.image-cont {
+		padding: 10px 0 0 20px;
+	}
 
-  .video {
-    width: 980px;
-    height: 500px;
-  }
+	.video {
+		width: 980px;
+		height: 500px;
+	}
 }
 @media (min-width: 800px) and (max-width: 992px) {
-  .main-page {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .btn {
-    font-size: 15px;
-  }
-  //////////HEADER
+	.main-page {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	.btn {
+		font-size: 15px;
+	}
+	//////////HEADER
 
-  .search-form {
-    width: 280px;
-    font-size: 17px;
-  }
-  .search-button {
-    font-size: 15px;
-    width: 130px;
-    height: 40px;
-  }
-  .search-help-cont {
-    width: 420px;
-  }
-  //////////FILM PAGE
-  .descr-cont {
-    font-size: 18px;
+	.search-form {
+		width: 280px;
+		font-size: 17px;
+	}
+	.search-button {
+		font-size: 15px;
+		width: 130px;
+		height: 40px;
+	}
+	.search-help-cont {
+		width: 420px;
+	}
+	//////////FILM PAGE
+	.descr-cont {
+		font-size: 18px;
 
-    .name {
-      border-width: 30px;
-      font-size: 25px;
-      border-bottom: 1px solid rgb(180, 96, 23);
-    }
-  }
-  .descr-head {
-    grid-template-columns: 1fr 2fr;
-  }
-  .image-cont {
-    padding: 10px 0 0 20px;
-  }
+		.name {
+			border-width: 30px;
+			font-size: 25px;
+			border-bottom: 1px solid rgb(180, 96, 23);
+		}
+	}
+	.descr-head {
+		grid-template-columns: 1fr 2fr;
+	}
+	.image-cont {
+		padding: 10px 0 0 20px;
+	}
 
-  .video {
-    width: 780px;
-    height: 400px;
-  }
+	.video {
+		width: 780px;
+		height: 400px;
+	}
 }
 @media (min-width: 650px) and (max-width: 800px) {
-  .main-page {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  //////////HEADER
-  .check {
-    bottom: -25px;
-  }
-  .search-form {
-    width: 280px;
-    font-size: 17px;
-  }
-  .search-button {
-    font-size: 15px;
-    width: 130px;
-    height: 40px;
-  }
-  .search-help-cont {
-    width: 420px;
-  }
-  //////////FILM PAGE
-  .descr-cont {
-    font-size: 20px;
+	.main-page {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	//////////HEADER
+	.check {
+		bottom: -25px;
+	}
+	.search-form {
+		width: 280px;
+		font-size: 17px;
+	}
+	.search-button {
+		font-size: 15px;
+		width: 130px;
+		height: 40px;
+	}
+	.search-help-cont {
+		width: 420px;
+	}
+	//////////FILM PAGE
+	.descr-cont {
+		font-size: 20px;
 
-    .name {
-      border-width: 30px;
-      font-size: 27px;
-      border-bottom: 1px solid rgb(180, 96, 23);
-    }
-  }
-  .descr-head {
-    grid-template-columns: 1fr;
-  }
-  .image-cont {
-    padding: 60px;
-  }
+		.name {
+			border-width: 30px;
+			font-size: 27px;
+			border-bottom: 1px solid rgb(180, 96, 23);
+		}
+	}
+	.descr-head {
+		grid-template-columns: 1fr;
+	}
+	.image-cont {
+		padding: 60px;
+	}
 
-  .video {
-    width: 440px;
-    height: 300px;
-    overflow: hidden;
-  }
+	.video {
+		width: 440px;
+		height: 300px;
+		overflow: hidden;
+	}
 }
 @media (min-width: 480px) and (max-width: 650px) {
-  .main-page {
-    grid-template-columns: 1fr 1fr;
-  }
-  .btn {
-    font-size: 20px;
-  }
-  //////////HEADER
-  .check {
-    bottom: -25px;
-  }
-  .search-form {
-    width: 250px;
-    font-size: 17px;
-  }
-  .search-button {
-    font-size: 15px;
-    width: 100px;
-    height: 40px;
-  }
-  .search-help-cont {
-    width: 360px;
-  }
-  //////////FILM PAGE
-  .descr-cont {
-    font-size: 10px;
+	.main-page {
+		grid-template-columns: 1fr 1fr;
+	}
+	.btn {
+		font-size: 20px;
+	}
+	//////////HEADER
+	.check {
+		bottom: -25px;
+	}
+	.search-form {
+		width: 250px;
+		font-size: 17px;
+	}
+	.search-button {
+		font-size: 15px;
+		width: 100px;
+		height: 40px;
+	}
+	.search-help-cont {
+		width: 360px;
+	}
+	//////////FILM PAGE
+	.descr-cont {
+		font-size: 10px;
 
-    .name {
-      border-width: 30px;
-      font-size: 17px;
-      border-bottom: 1px solid rgb(180, 96, 23);
-    }
-  }
-  .descr-head {
-    grid-template-columns: 1fr;
-  }
-  .image-cont {
-    padding: 20px;
-  }
+		.name {
+			border-width: 30px;
+			font-size: 17px;
+			border-bottom: 1px solid rgb(180, 96, 23);
+		}
+	}
+	.descr-head {
+		grid-template-columns: 1fr;
+	}
+	.image-cont {
+		padding: 20px;
+	}
 
-  .video {
-    width: 440px;
-    height: 300px;
-    overflow: hidden;
-  }
+	.video {
+		width: 440px;
+		height: 300px;
+		overflow: hidden;
+	}
 }
 @media (min-width: 400px) and (max-width: 480px) {
-  .main-page {
-    grid-template-columns: 1fr;
-    grid-auto-rows: 460px;
-  }
+	.main-page {
+		grid-template-columns: 1fr;
+		grid-auto-rows: 460px;
+	}
 
-  .collection-item {
-    .image {
-      height: 400px;
-    }
-  }
-  //////////HEADER
-  .check {
-    bottom: -25px;
-  }
-  .search-form {
-    width: 200px;
-    font-size: 17px;
-  }
-  .search-button {
-    font-size: 15px;
-    width: 100px;
-    height: 40px;
-  }
-  .search-help-cont {
-    width: 310px;
-  }
-  //////////FILM PAGE
-  .descr-cont {
-    font-size: 14px;
+	.collection-item {
+		.image {
+			height: 400px;
+		}
+	}
+	//////////HEADER
+	.check {
+		bottom: -25px;
+	}
+	.search-form {
+		width: 200px;
+		font-size: 17px;
+	}
+	.search-button {
+		font-size: 15px;
+		width: 100px;
+		height: 40px;
+	}
+	.search-help-cont {
+		width: 310px;
+	}
+	//////////FILM PAGE
+	.descr-cont {
+		font-size: 14px;
 
-    .name {
-      border-width: 30px;
-      font-size: 23px;
-      border-bottom: 1px solid rgb(180, 96, 23);
-    }
-  }
-  .descr-head {
-    grid-template-columns: 1fr;
-  }
-  .image-cont {
-    padding: 20px;
-  }
+		.name {
+			border-width: 30px;
+			font-size: 23px;
+			border-bottom: 1px solid rgb(180, 96, 23);
+		}
+	}
+	.descr-head {
+		grid-template-columns: 1fr;
+	}
+	.image-cont {
+		padding: 20px;
+	}
 
-  .video {
-    width: 360px;
-    height: 250px;
-    overflow: hidden;
-  }
+	.video {
+		width: 360px;
+		height: 250px;
+		overflow: hidden;
+	}
 }
 @media (min-width: 0px) and (max-width: 400px) {
-  .main-page {
-    grid-template-columns: 1fr;
-  }
-  //////////HEADER
-  .check {
-    bottom: -25px;
-  }
-  .search-form {
-    width: 150px;
-    font-size: 13px;
-  }
-  .search-button {
-    font-size: 10px;
-    width: 70px;
-    height: 40px;
-  }
-  .search-help-cont {
-    width: 230px;
-  }
-  //////////FILM PAGE
-  .descr-cont {
-    font-size: 13px;
+	.main-page {
+		grid-template-columns: 1fr;
+	}
+	//////////HEADER
+	.check {
+		bottom: -25px;
+	}
+	.search-form {
+		width: 150px;
+		font-size: 13px;
+	}
+	.search-button {
+		font-size: 10px;
+		width: 70px;
+		height: 40px;
+	}
+	.search-help-cont {
+		width: 230px;
+	}
+	//////////FILM PAGE
+	.descr-cont {
+		font-size: 13px;
 
-    .name {
-      border-width: 30px;
-      font-size: 17px;
-      border-bottom: 1px solid rgb(180, 96, 23);
-    }
-  }
-  .descr-head {
-    grid-template-columns: 1fr;
-  }
-  .image-cont {
-    padding: 20px;
-  }
+		.name {
+			border-width: 30px;
+			font-size: 17px;
+			border-bottom: 1px solid rgb(180, 96, 23);
+		}
+	}
+	.descr-head {
+		grid-template-columns: 1fr;
+	}
+	.image-cont {
+		padding: 20px;
+	}
 
-  .video {
-    width: 320px;
-    height: 200px;
-    overflow: hidden;
-  }
+	.video {
+		width: 320px;
+		height: 200px;
+		overflow: hidden;
+	}
 }

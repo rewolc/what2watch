@@ -17,7 +17,7 @@ const CollectionItem = ({
 	addFav,
 	dellFromFav,
 }) => {
-	console.log(display);
+
 	let navigate = useNavigate();
 	if (display) {
 		return (

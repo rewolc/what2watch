@@ -24,7 +24,6 @@ async function getSerial(i) {
 
 export function* workFetchSaga(args) {
 	const mySerial = yield call(getSerial, args.name);
-	console.log(mySerial.length);
 	if (mySerial.length !== 0) {
 		openGoodNotif("success");
 		yield put({

@@ -9,9 +9,9 @@ async function getSerial(i) {
 			{
 				method: "GET",
 				headers: {
-					"X-API-KEY": "59509c31-869e-496b-be91-40d1491a209d",
-					accept: "application/json",
-				},
+					'X-API-KEY': '59509c31-869e-496b-be91-40d1491a209d',
+					'Content-Type': 'application/json',
+			  },
 			}
 		);
 		const data = await request.json();
